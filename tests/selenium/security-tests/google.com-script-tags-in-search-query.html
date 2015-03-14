@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.google.com/?gws_rd=ssl#q=%253Cscript%253Ealert%2528%2527xss%2527%2529%253C%252Fscript%253E" />
+<title>Script and Angle Brackets Removed from Title</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Script and Angle Brackets Removed from Title</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/?gws_rd=ssl#q=%3Cscript%3Ealert%28%27xss%27%29%3C%2Fscript%3E</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>glob:*https://www.google.com/*</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>regexp:^((?!\&lt;script).)*$</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>regexp:^((?!\&lt;\/script).)*$</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>regexp:^((?!&lt;&gt;'&quot;).)*$</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>regexp:^((?!%3[CEce]).)*$</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>glob:*noscript*</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
