@@ -15,7 +15,7 @@ There is also an option which will monitor for when an input or password field i
 ## Help, Support, and Documentation
 The full help files and documentation can be found on the [add-on's home page](https://github.com/erichgoldman/add-url-to-window-title "Homepage on GitHub") and in the [project's wiki](https://github.com/erichgoldman/add-url-to-window-title/wiki "Wiki in Github"). If you are looking for support, please [report at GitHub](https://github.com/erichgoldman/add-url-to-window-title/issues "Issue Tracker on GitHub") and not on the Add-on's Directory as it is not possible to have a conversation there. The home page has some tutorials and videos to help you understand how to use the plugin and maximize your auto-type usage.
 
-If you want to use Auto-Type with the `<input />` field attributes option, you must **disable** the option `Cancel auto-type when the target window title changes.` in your KeePass Options, under the advanced tab. Learn more [in the documentation](https://github.com/erichgoldman/add-url-to-window-title).
+If you want to use Auto-Type with the `<input />` field attributes option, you must **disable** the option `Cancel auto-type when the target window title changes.` in your KeePass Options, under the advanced tab. Learn more [in the wiki](https://github.com/erichgoldman/add-url-to-window-title/wiki/Using-the-%22Show-field-attributes-when-a-text-input-field-has-focus%3F%22-Option).
 
 -------
 
