@@ -19,7 +19,7 @@ If you want to use Auto-Type with the `<input />` field attributes option, you m
 
 -------
 
-Please note the official release on the Mozilla Directory is signed, if you received a compiled `.xpi` file which is not signed and you receive a "author not verified" message when installing, this is not an official or trusted version. Source code is heavily documented and available on [GitHub](https://github.com/erichgoldman/add-url-to-window-title "GitHub Repo for this add-on") (GPL 2.0+).
+Please note the [official release on the Mozilla Directory](https://addons.mozilla.org/en-US/firefox/addon/add-url-to-window-title/) is signed, if you received a compiled `.xpi` file which is not signed and you receive a "author not verified" message when installing, this is not an official or trusted version. Source code is heavily documented and available on [GitHub](https://github.com/erichgoldman/add-url-to-window-title "GitHub Repo for this add-on") (GPL 2.0+).
 
 
 ## Background
