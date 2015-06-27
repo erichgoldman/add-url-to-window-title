@@ -6,7 +6,7 @@
   "author": "Eric H. Goldman",
   "homepage": "https://github.com/erichgoldman/add-url-to-window-title",
   "license": "GPL-2.0+",
-  "version": "1.0",
+  "version": "1.01",
   "icon": "icon.png",
   "permissions": {"private-browsing": true},
   "preferences": [

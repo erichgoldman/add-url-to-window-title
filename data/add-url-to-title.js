@@ -260,6 +260,9 @@ var addURLToTitle = (function() {
    * @see {@link http://www.justarrangingbits.org/firefox-magic-decoding-address-bar/index.html|FireFox Address Bar} and notice how even if it is not encoded in the addressbar, the add-on will show it encoded when its put in the title   
 	 */
   var sanitizer = function (unfiltered) {
+    
+    unfiltered = typeof unfiltered === 'string' ? unfiltered : '';
+    
 		let filtered = unfiltered.replace('<script', 'noscript').replace('</script', 'noscript');
 		filtered = filtered.replace(/[<>'"]/g, '').replace(/%3[CEce]/g, '');
         
