@@ -4,9 +4,10 @@
   "id": "autt@ericgoldman.name",
   "description": "Add the full URL or hostname of the current web page to the window title. Designed to help other applications identify the current window. Helps KeePass (http://www.keepass.info) to identify the current URL for auto-type. See homepage for more information, tutorials, videos, and to report any issues.",
   "author": "Eric H. Goldman",
+  "translators": ["Joshua Haschke (German Translation)"],
   "homepage": "https://github.com/erichgoldman/add-url-to-window-title",
   "license": "GPL-2.0+",
-  "version": "1.01",
+  "version": "1.02",
   "icon": "icon.png",
   "permissions": {"private-browsing": true},
   "preferences": [
