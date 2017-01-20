@@ -8,6 +8,7 @@
   "homepage": "https://github.com/erichgoldman/add-url-to-window-title",
   "license": "GPL-2.0+",
   "version": "1.02",
+  "main": "lib/main.js",
   "icon": "icon.png",
   "permissions": {"private-browsing": true},
   "preferences": [
