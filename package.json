@@ -17,11 +17,11 @@
   "permissions": {"private-browsing": true},
   "preferences": [
 	{
-        "name": "showFullURL",
-        "title": "Show the full URL?",
-        "description": "Checked shows the full URL; Unchecked shows only the hostname",
-        "type": "bool",
-        "value": true
+        "name": "urlFormat",
+        "title": "URL Format",
+        "description": "Full URL format: {protocol}://{hostname}{port}/{path}{args}{hash}",
+        "type": "string",
+        "value": "{protocol}://{hostname}{port}/"
     }
 	,
     {
