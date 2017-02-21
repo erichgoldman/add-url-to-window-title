@@ -28,13 +28,6 @@ var addURLToTitle = (function() {
 	var separatorString = '-';
 
 	/**
-	 * OBSOLETE - A preference which determines if the full URL should be shown (true) or
-	 * if only the hostname for the current web page should be shown (false).
-	 * @type {boolean}
-	 */
-	var showFullURL = false;
-
-	/**
 	  * A preference specifying URL format for the title.
 	  * @type {string}
 	  */
@@ -48,8 +41,8 @@ var addURLToTitle = (function() {
 	var showFieldAttributes = false;
 
 	/**
-	 * The URL which will be added to the window title, determined by 
-	 * var showFullURL
+	 * The URL which will be added to the window title, formatted according
+	 * to urlFormat
 	 * @type {string}
 	 */
 	var addedURL = '';
@@ -165,7 +158,6 @@ var addURLToTitle = (function() {
 		// branch, explicitly set them into the local variables
 		separatorString = prefs['separatorString'].trim();
 		urlFormat = prefs['urlFormat'];
-		showFullURL = prefs['showFullURL'];
 
 		// Only run the update on change, set inside to prevent additional variable declaration
 		if(showFieldAttributes !== prefs['showFieldAttributes']){
