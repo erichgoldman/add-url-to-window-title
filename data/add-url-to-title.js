@@ -28,11 +28,17 @@ var addURLToTitle = (function() {
 	var separatorString = '-';
 
 	/**
-	 * A preference which determines if the full URL should be shown (true) or
+	 * OBSOLETE - A preference which determines if the full URL should be shown (true) or
 	 * if only the hostname for the current web page should be shown (false).
 	 * @type {boolean}
 	 */
 	var showFullURL = false;
+
+	/**
+	  * A preference specifying URL format for the title.
+	  * @type {string}
+	  */
+	var urlFormat = '{protocol}://{hostname}{port}/';
 
 	/**
 	 * A preference which determines whether (true) or not (false) to show the
@@ -158,8 +164,9 @@ var addURLToTitle = (function() {
 		// prefs will be an array of the SimplePrefs for this extension's 
 		// branch, explicitly set them into the local variables
 		separatorString = prefs['separatorString'].trim();
+		urlFormat = prefs['urlFormat'];
 		showFullURL = prefs['showFullURL'];
-			
+
 		// Only run the update on change, set inside to prevent additional variable declaration
 		if(showFieldAttributes !== prefs['showFieldAttributes']){
 		
@@ -200,15 +207,26 @@ var addURLToTitle = (function() {
 		
 		// Default parameter value check
 		useOriginalTitle = typeof useOriginalTitle !== 'undefined' ? useOriginalTitle : false;
-			
-		if(showFullURL === false){
-			// Add a trailing slash after the hostname for security e.g., given 
-			// a malicious hostname like: "google.com-evilsite.com/" 
-			// will not match KeePass rule for "google.com/"
-			addedURL = document.location.hostname + '/';
-		}else{
-			addedURL = document.URL;
-		}
+		
+		// parse URL
+		var parser = document.createElement('a');
+		parser.href = document.URL;
+
+		// format URL
+		var replObj = {
+			'{protocol}': parser.protocol.slice(0,-1),
+			'{hostname}': parser.hostname,
+			'{port}': (parser.port != '') ? (':'+parser.port) : '',
+			'{path}': parser.pathname.substring(1),
+			'{args}': parser.search,
+			'{hash}': parser.hash
+		};
+		var re = new RegExp(Object.keys(replObj).join("|"),"gi");
+		addedURL = urlFormat.replace(re, function(matched){
+				return replObj[matched];
+		});
+		
+		parser = null;	
 		
 		// Used in observer to prevent unnecessary additional calls
 		lastTitleSetByAddon = true; 
