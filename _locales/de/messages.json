@@ -1,0 +1,26 @@
+{
+
+  "optionsShowFullUrlText": {
+    "message":"Zeige die vollständige URL?"
+  }
+  ,"optionsShowFullUrlHelp": {
+    "message":"Ausgewählt zeigt die vollständige URL, nicht ausgewählt zeigt nur den Hostnamen."
+  }
+
+  ,"optionsSeparatorStringHeader": {
+    "message":"Trennzeichen"
+  }
+  ,"optionsSeparatorStringHelp": {
+    "message":"Ein Trennzeichen oder Zeichenfolge, die zwischen den ursprünglichen Titel und die URL gesetzt wird (z.B. 'Titel - URL' oder 'Titel :: URL')"
+  }
+
+  ,"optionsShowFieldAttributesText": {
+    "message":"Hänge Feldeigenschaften an die URL an, wenn Eingabefeld fokussiert"
+  }
+  ,"optionsShowFieldAttributesHelp": {
+    "message":"Wenn ausgewählt, werden die Eigenschaften 'name' und 'id' von <code>&#x3C;input /&#x3E;</code> Feldern dem Titel hinzugefügt. Das ist hilfreich auf Seiten, bei denen die URL für eine richtige Auto-Type Zuordnung von KeePass nicht ausreichend ist. Außerdem hilft es bei zweistufigen Anmeldungen. Durch die Kombination aus URL und Eingebabefeld nach dem Titel, kann ein eindeutiges Auto-Type erzeugt werden, das eine richtige Zuordnung ermöglicht."
+  } 
+ 
+
+  
+}

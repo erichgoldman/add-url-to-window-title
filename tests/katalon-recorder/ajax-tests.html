@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>security-tests</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Google Search with AJAX results loading</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>https://www.google.com/<datalist><option>https://www.google.com/</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>glob:*https://www.google.com/*<datalist><option>glob:*https://www.google.com/*</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>setText</td>
+	<td>name=q<datalist><option>name=q</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sign in'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Collections'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('I', "'", 'm Feeling Doodley')])[1]/preceding::input[5]</option><option>//input[@name='q']</option><option>//form[@id='tsf']/div[2]/div/div/div/div/input</option><option>//div/div/input</option><option>css=input[name="q"]</option></datalist></td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>name=q<datalist><option>id=lst-ib</option><option>name=q</option></datalist></td>
+	<td>${KEY_ENTER} </td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>glob:*test - Google Search*<datalist><option>glob:*test - Google Search*</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

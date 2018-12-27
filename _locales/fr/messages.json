@@ -1,0 +1,26 @@
+{
+
+  "optionsShowFullUrlText": {
+    "message":"Afficher l'URL complète?"
+  }
+  ,"optionsShowFullUrlHelp": {
+    "message":"Si coché, montre l'URL complète; non coché, n'affiche que le nom d'hôte"
+  }
+
+  ,"optionsSeparatorStringHeader": {
+    "message":"Séparateur de texte"
+  }
+  ,"optionsSeparatorStringHelp": {
+    "message":"Un séparateur est placé entre le titre de la page et l'URL (ex: 'Titre - URL' ou 'Titre :: URL')"
+  }
+
+  ,"optionsShowFieldAttributesText": {
+    "message":"Voir les attributs de champ quand un champ de saisie de texte a le focus?"
+  }
+  ,"optionsShowFieldAttributesHelp": {
+    "message":"Lorsque cette option est cochée, les attributs \"name\" et \"id\" du champ à renseigner seront ajoutés au titre lorsqu'ils disposent du focus. Ceci est utile si vous avez une page où l'URL n'est pas suffisante pour permettre à Keepass de sélectionner le bon remplissage automatique. Cela est également utile pour les connexions en deux étapes. Vous créez simplement un remplissage automatique pour le champ, maintenant vous pouvez choisir l'auto-remplissage basé sur l'URL et le champ précis à renseigner."
+  } 
+ 
+
+  
+}

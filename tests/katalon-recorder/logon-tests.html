@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>logon-tests</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Live Login Test</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>https://login.live.com/<datalist><option>https://login.live.com/</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>glob:*https://login.live.com*<datalist><option>glob:*https://login.live.com*</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=i0116<datalist><option>id=i0116</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>glob:*https://login.live.com/*Input Name*login*<datalist><option>glob:*https://login.live.com/*Input Name*login*</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Yahoo Login Test</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>https://login.yahoo.com/<datalist><option>https://login.yahoo.com/</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>glob:*https://login.yahoo.com*<datalist><option>glob:*https://login.yahoo.com*</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=login-username<datalist><option>id=login-username</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>glob:*https://login.yahoo.com*Input Name*username*<datalist><option>glob:*https://login.yahoo.com*Input Name*username*</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Google Login Test</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>https://accounts.google.com/<datalist><option>https://accounts.google.com/</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>glob:*https://accounts.google.com/*<datalist><option>glob:*https://accounts.google.com/*</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=identifierId<datalist><option>id=Email</option><option>id=identifierId</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>glob:*https://accounts.google.com/*Input Name*identifierId*<datalist><option>glob:*https://accounts.google.com/*Input Name*Email*</option><option>glob:*https://accounts.google.com/*Input Name*identifierId*</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

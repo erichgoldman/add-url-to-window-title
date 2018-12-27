@@ -1,0 +1,70 @@
+{
+  "manifestDescription": {
+    "message":"Add the full URL or hostname of the current web page to the window title. Designed to help other applications identify the current window. Helps KeePass (http://www.keepass.info) to identify the current URL for auto-type. See homepage for more information, tutorials, videos, and to report any issues."
+    ,"description":"Description in the manifest file"
+  }
+  
+  ,"optionsSectionHeader": {
+    "message":"AU2WT Options"
+    ,"description":"In extension options, the main header"
+  }
+  
+  ,"optionsShowFullUrlHeader": {
+    "message":"How to display URL in Window Title?"
+    ,"description":"In extension options, header for showFullUrl setting"
+  }
+  ,"optionsShowFullUrlText": {
+    "message":"Show the full URL?"
+    ,"description":"In extension options, text next to checkbox for showFullUrl setting"
+  }
+  ,"optionsShowFullUrlHelp": {
+    "message":"Checked shows the full URL; Unchecked shows only the hostname portion."
+    ,"description":"In extension options, helper text for showFullUrl setting"
+  }
+
+  ,"optionsSeparatorStringHeader": {
+    "message":"Separator String"
+    ,"description":"In extension options, header for separatorString setting"
+  }
+  ,"optionsSeparatorStringHelp": {
+    "message":"A string to be put between the original title and the URL (e.g., 'Title - URL' or 'Title :: URL')"
+    ,"description":"In extension options, helper text for separatorString setting"
+  }
+
+  
+  ,"optionsShowFieldAttributesHeader": {
+    "message":"Active Field Attribute Display"
+    ,"description":"In extension options, header for showFieldAttributes setting"
+  }
+  ,"optionsShowFieldAttributesText": {
+    "message":"Show the field attributes when a text input field has focus?"
+    ,"description":"In extension options, text next to checkbox for showFieldAttributes setting"
+  }
+  ,"optionsShowFieldAttributesHelp": {
+    "message":"When this is checked, the 'name' and 'id' attributes of <code>&#x3C;input /&#x3E;</code> fields will be added to the title when they have focus. This is useful if you have a page where the URL is not enough for Keepass to determine the proper auto-type. This is good for two-step logons as well. You simply create an auto-type command specific to the field, then you can determine the auto-type based on the URL and the specific field which currently has fous."
+    ,"description":"In extension options, helper text for showFieldAttributes setting"
+  } 
+ 
+ 
+  ,"optionsSaveButtonText": {
+    "message":"Save Settings"
+    ,"description":"In Options Popup - Text which is shown on the save button"
+  }
+  ,"optionsSavedHeader": {
+    "message":"Settings Saved"
+    ,"description":"In Options Popup - Header for green div that is shown after clicking save button, to confirm saving happened"
+  }  
+  ,"optionsSavedMessage": {
+    "message":"You may need to reload/refresh your tabs."
+    ,"description":"In Options Popup - Text that is shown after clicking save button, to confirm saving happened"
+  }
+  ,"optionsDonateLinkText": {
+    "message":"Donate &dollar;2.22"
+    ,"description":"In Options Popup - Link that leads to donation page"
+  }
+  ,"optionsHelpLinkText": {
+    "message":"Help &amp; FAQs"
+    ,"description":"In Options Popup - Link that leads to help page"
+  }
+  
+}

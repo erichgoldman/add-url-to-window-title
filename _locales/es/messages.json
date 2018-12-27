@@ -1,0 +1,28 @@
+{
+
+  "optionsShowFullUrlText": {
+    "message":"¿Mostrar el URL completo?"
+  }
+  ,"optionsShowFullUrlHelp": {
+    "message":"Chequeado muestra la URL completa; Muestra sin marcar sólo el hostname"
+  }
+
+  ,"optionsSeparatorStringHeader": {
+    "message":"Separador"
+  }
+  ,"optionsSeparatorStringHelp": {
+    "message":"Una cadena que se coloca entre el título original y la URL (e.g., 'Title - URL' or 'Title :: URL')"
+  }
+
+  ,"optionsShowFieldAttributesText": {
+    "message":"¿Mostrar los atributos de <code>&#x3C;input /&#x3E;</code> cuando un <code>&#x3C;input /&#x3E;</code> de texto tiene el foco?"
+  }
+  ,"optionsShowFieldAttributesHelp": {
+    "message":"Cuando se marca esta opción, el 'nombre' y 'id' atributos del <code>&#x3C;input /&#x3E;</code> se añadirán al título cuando tienen foco. This is useful if you have a page where the URL is not enough for Keepass to determine the proper auto-type. This is good for two-step logons as well. You simply create an auto-type command specific to the field, now you can determine the auto-type based on the URL and the specific field you are in."
+  } 
+ 
+  ,"optionsHelpLinkText": {
+    "message":"Ayuda"
+  }
+  
+}
