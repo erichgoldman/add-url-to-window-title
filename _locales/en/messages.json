@@ -1,6 +1,6 @@
 {
   "manifestDescription": {
-    "message":"Add the full URL or hostname of the current web page to the window title. Designed to help other applications identify the current window. Helps KeePass (http://www.keepass.info) to identify the current URL for auto-type. See homepage for more information, tutorials, videos, and to report any issues."
+    "message":"Add full URL or hostname of the current page to the window title. Helps other apps, e.g., KeePass, identify current page."
     ,"description":"Description in the manifest file"
   }
   
