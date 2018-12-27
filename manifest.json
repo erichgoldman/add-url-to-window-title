@@ -1,7 +1,7 @@
 {
   "name": "Add URL To Window Title",
   "author": "Eric H Goldman",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "minimum_chrome_version": "42",
   "manifest_version": 2,
   "description": "__MSG_manifestDescription__",
@@ -27,7 +27,7 @@
     "chrome_style": true
   },
   "permissions": [
-    "tabs",
+    "activeTab",
     "storage"
   ]/* "applications" key is required by Firefox, but not accepted by Chrome,
     * remove this comment when releasing for Firefox  
