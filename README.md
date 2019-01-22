@@ -27,7 +27,7 @@ No external libraries are used for this extension and all code is vanilla JavaSc
 
 To load a local version, follow the docs [to load local extension](https://developer.chrome.com/extensions/faq#faq-dev-01)
 
-As a regular user, you can install the [Chrome Webstore](http://www.tbd) version if you use Chrome, Vivaldi, or similar Chromium based browser. This extension also works in Firefox and can be installed from the [Firefox Add-Ons Directory](https://addons.mozilla.org/en-US/firefox/addon/add-url-to-window-title/).
+As a regular user, you can install the [Chrome Webstore](https://chrome.google.com/webstore/detail/add-url-to-window-title/ndiaggkadcioihmhghipjmgfeamgjeoi) version if you use Chrome, Vivaldi, or similar Chromium based browser. This extension also works in Firefox and can be installed from the [Firefox Add-Ons Directory](https://addons.mozilla.org/en-US/firefox/addon/add-url-to-window-title/).
 
 
 
