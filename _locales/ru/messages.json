@@ -1,0 +1,68 @@
+{
+  "manifestDescription": {
+  "message":"Добавляет полный URL или доменное имя текущей страницы в заголовок окна. Что позволяет сторонним приложениям (например KeePass) идентифицировать текущую открытую страницу."
+  ,"description":"Description in the manifest file"
+  }
+
+  ,"optionsSectionHeader": {
+  "message":"Настройки AU2WT"
+  ,"description":"In extension options, the main header"
+  }
+
+  ,"optionsShowFullUrlHeader": {
+  "message":"Что должно отображаться в заголовке окна?"
+  ,"description":"In extension options, header for showFullUrl setting"
+  }
+  ,"optionsShowFullUrlText": {
+  "message":"Отображать URL целиком?"
+  ,"description":"In extension options, text next to checkbox for showFullUrl setting"
+  }
+  ,"optionsShowFullUrlHelp": {
+  "message":"При установленном флажке - URL отображается целиком; При снятом - отображается только доменное имя."
+  ,"description":"In extension options, helper text for showFullUrl setting"
+  }
+
+  ,"optionsSeparatorStringHeader": {
+  "message":"Строка-разделитель"
+  ,"description":"In extension options, header for separatorString setting"
+  }
+  ,"optionsSeparatorStringHelp": {
+  "message":"Строка символов, которые будут разделять оригинальный заголовок и URL-адрес (например 'Заголовок - URL' или 'Заголовок :: URL')"
+  ,"description":"In extension options, helper text for separatorString setting"
+  }
+
+  ,"optionsShowFieldAttributesHeader": {
+  "message":"Отображение атрибутов полей ввода текста"
+  ,"description":"In extension options, header for showFieldAttributes setting"
+  }
+  ,"optionsShowFieldAttributesText": {
+  "message":"Показывать атрибуты поля при установленном в нём курсоре ввода текста?"
+  ,"description":"In extension options, text next to checkbox for showFieldAttributes setting"
+  }
+  ,"optionsShowFieldAttributesHelp": {
+  "message":"При установленном флажке – атрибуты 'name' и 'id' <code>&#x3C;input /&#x3E;</code> полей будут добавляться к заголовку окна когда в них установлен курсор ввода текста. Это может пригодиться, когда KeePass недостаточно одного URL страницы для корректной работы авто-заполнения. Это также может пригодиться при двухэтапной аутентификации. Вы просто создаёте команду авто-заполнения для конкретного поля, а затем настраиваете авто-заполнение на работу с URL и конкретным полем, в котором сейчас находится курсор ввода текста."
+  ,"description":"In extension options, helper text for showFieldAttributes setting"
+  }
+
+  ,"optionsSaveButtonText": {
+  "message":"Сохранить настройки"
+  ,"description":"In Options Popup - Text which is shown on the save button"
+  }
+  ,"optionsSavedHeader": {
+  "message":"Настройки сохранены"
+  ,"description":"In Options Popup - Header for green div that is shown after clicking save button, to confirm saving happened"
+  }
+  ,"optionsSavedMessage": {
+  "message":"Чтобы увидеть изменения, вам может потребоваться обновить вкладки."
+  ,"description":"In Options Popup - Text that is shown after clicking save button, to confirm saving happened"
+  }
+  ,"optionsDonateLinkText": {
+  "message":"Поддержать автора $2.22"
+  ,"description":"In Options Popup - Link that leads to donation page"
+  }
+  ,"optionsHelpLinkText": {
+  "message":"Помощь & ЧаВо"
+  ,"description":"In Options Popup - Link that leads to help page"
+  }
+
+}
