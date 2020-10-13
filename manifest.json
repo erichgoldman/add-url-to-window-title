@@ -29,14 +29,11 @@
   "permissions": [
     "activeTab",
     "storage"
-  ]/* "applications" key is required by Firefox, but not accepted by Chrome,
-    * remove this comment when releasing for Firefox  
-  ,
-  "applications": {
+  ],
+  "browser_specific_settings": {
     "gecko": {
       "id": "autt@ericgoldman.name",
       "strict_min_version": "60.0"
     }
   }
-  */
 }
