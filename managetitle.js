@@ -343,10 +343,14 @@ var addUrlToWindowTitle = (function() {
 			
 		});
 
-    var config = { attributes: true, childList: true, characterData: true };
-		var target = document.querySelector('head > title'); 
+	var config = { attributes: true, childList: true, characterData: true, subtree: true };
+		// in theory, the selector should be head > title, but some in some webpages with broken
+		// HTML the title tag is automatically moved to the body by the browser, and changes to it
+		// still change the actual website title. the title element also cannot validly appear
+		// anywhere else, so just selecting title is fine
+		var target = document.querySelector('title'); 
 
-		// Only run the observer on tabs that have a <head /> (e.g., not about:blank)
+		// Only run the observer on tabs that have a <title /> (e.g., not about:blank)
 		if(target !== null){ 
 			titleObserver.observe(target, config);
 		}
